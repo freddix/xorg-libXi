@@ -1,18 +1,18 @@
 Summary:	X Input extension library
 Name:		xorg-libXi
-Version:	1.6.1
+Version:	1.7
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	78ee882e1ff3b192cf54070bdb19938e
+# Source0-md5:	d77922d822cb3abdbdfb92cd66440576
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkg-config
 BuildRequires:	xorg-libXext-devel
-BuildRequires:	xorg-proto >= 7.7
+BuildRequires:	xorg-proto >= 7.7-3
 BuildRequires:	xorg-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
