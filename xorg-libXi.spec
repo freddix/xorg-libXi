@@ -1,7 +1,7 @@
 Summary:	X Input extension library
 Name:		xorg-libXi
 Version:	1.7.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
@@ -66,7 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libXi.so
-%{_libdir}/libXi.la
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/xi.pc
 
