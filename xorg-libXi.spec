@@ -1,11 +1,11 @@
 Summary:	X Input extension library
 Name:		xorg-libXi
-Version:	1.7.2
-Release:	2
+Version:	1.7.4
+Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXi-%{version}.tar.bz2
-# Source0-md5:	f4df3532b1af1dcc905d804f55b30b4a
+# Source0-md5:	9c4a69c34b19ec1e4212e849549544cb
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -50,6 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	pkgconfigdir=%{_pkgconfigdir}
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
